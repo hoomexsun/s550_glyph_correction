@@ -1,6 +1,6 @@
 # s550_glyph_correction 🏁
 
-Glyph Font s-550 used along with srilipi for typing Bengali/Bangla script in Meiteilon is not unicode compatible. This project makes it possible to correct the glyphs into unicode compatible. Also includes resources.
+Srilipi and the Glyph Font s-550, which were utilized to type the Bengali/Bangla script in Meiteilon, are incompatible with Unicode. This project facilitates the conversion of glyphs to unicode characters. Resources are included as well.
 
 🏁 This repository is fully developed!
 
@@ -55,7 +55,9 @@ Refer `src/utils/file.py`
 Put all files inside a directory say `data/inputs/` and write as
 
 ```python
-from src.utils.dir
+# From a python file inside main_project/src
+from glyph_correction import GlyphCorrection
+from src.utils.dir import process_directory
 
 input_dir = "data/inputs
 gc = GlyphCorrection()
@@ -74,9 +76,10 @@ positional arguments:
 input_string Input string to correct
 
 options:
--h, --help show this help message and exit
--f, --file Input is a file name
--d, --dir Input is a directory
+
+1. -h, --help show this help message and exit
+2. -f, --file Input is a file name
+3. -d, --dir Input is a directory
 
 ## See also
 
