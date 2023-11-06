@@ -1,4 +1,3 @@
-#! From speech_dataset/src/utils/bn_map.py
 EN_PUNCTUATIONS = {
     "\u0021",  # \u0021 -> ! (Exclamation mark)
     "\u0025",  # \u0025 -> % (Percent sign)

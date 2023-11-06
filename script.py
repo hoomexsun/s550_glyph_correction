@@ -1,7 +1,7 @@
 import argparse
 from pathlib import Path
 from src import GlyphCorrection
-from src.utils.dir import process_directory
+from src.utils.file import process_directory
 
 
 # -------------------------------- SCRIPT MODE -------------------------------- #

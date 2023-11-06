@@ -1,4 +1,4 @@
-from .correction import GlyphCorrection
+from .s550_correction import GlyphCorrection
 
 
 __all__ = ["GlyphCorrection"]

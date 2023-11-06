@@ -19,7 +19,7 @@ Output is in `data/output.txt`
 
 Clone `src` folder in your `main_project/src` and rename it to your choice, say `glyph_correction`.
 
-Then, Import and create `MMTransliteration` class from `glyph_correction` and call `correct()` , `correct_script()` or `correct_utterances()`
+Then, Import and create `GlyphCorrection` class from `glyph_correction` and call `correct()` , `correct_script()` or `correct_utterances()`
 
 ```python
 # From a python file inside main_project/src
@@ -59,12 +59,17 @@ Put all files inside a directory say `data/inputs/` and write as
 from glyph_correction import GlyphCorrection
 from src.utils.dir import process_directory
 
-input_dir = "data/inputs
+input_dir = "data/inputs"
 gc = GlyphCorrection()
-process_directory(gc.correct, dir=input_dir)
+
+# For normal files
+process_directory(gc.correct_script, dir=input_dir)
+
+# For utterance files
+process_directory(gc.correct_utterances, dir=input_dir)
 ```
 
-Output files will be inside `data/output`
+Output files will be inside `data/outputs`
 
 ## 6. Script mode
 
@@ -80,6 +85,10 @@ options:
 1. -h, --help show this help message and exit
 2. -f, --file Input is a file name
 3. -d, --dir Input is a directory
+
+## 7. Algorithm 🚧
+
+Yet to be written!
 
 ## See also
 
